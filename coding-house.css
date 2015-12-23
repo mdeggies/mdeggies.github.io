@@ -1,0 +1,71 @@
+
+.page-header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: 'Overlock', bold;
+}
+
+.navbar-default {
+  background-color: #fff7f5;
+  border-color: #e8e6dc;
+  border-width: 1px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ff7bac;
+    font-family: 'Overlock', bold;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color="31333";
+  font-family: 'Overlock', bold;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Overlock', cursive;
+}
+
+.row {
+  margin: 25px;
+}
+
+.about-me {
+  text-align: left;
+  font-family: 'Overlock', cursive;
+  position: relative;
+}
+
+.col-md-6 thoughts {
+  background-color: #ffed98;
+  font-family: 'Overlock', bold;
+}
+
+html {
+  position: relative;
+  font-family: 'Overlock', cursive;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.footer {
+  color: #795b51;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff7f5;
+  border-top: solid 1px #fff7f5;
+}
