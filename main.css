@@ -6,6 +6,11 @@
   float: right;
   vertical-align: top;
 }
+
+.navbar .navbar-nav li a, .navbar-brand.brand {
+  padding-bottom: 20px;
+}
+
 .navbar .navbar-collapse {
   text-align: center;
   border: 0px;
