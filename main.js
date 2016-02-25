@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $(document).scroll(function() {
     scroll_start = $(this).scrollTop();
-    if (scroll_start > 525) {
+    if (scroll_start > 200) {
       $navbar.css('background-color', 'rgba(255,255,255,1)');
       $navText.css('color', 'rgba(0,0,0,1)');
     }
@@ -29,20 +29,20 @@ $(document).ready(function() {
 
   $(function() {
     $(".typing").typed({
-      strings: ["I love to work with Javascript.",
-      "I love to work with Node.",
-      "I love to work with Angular.",
-      "I love to work with Mongo.",
-      "I love to work with Heroku.",
-      "I love to work with Express.",
-      "I love to work with Bootstrap.",
-      "I love to work with jQuery.",
-      "I love to work with MySQL.",
-      "I love to work with Photoshop.",
-      "I love to work with GIMP.",
-      "I love to work with Mongoose.",
-      "I love to work with Tomcat.",
-      "I love to work with Chrome DevTools."],
+      strings: ["Javascript.",
+      "Node.",
+      "Angular.",
+      "Mongo.",
+      "Heroku.",
+      "Express.",
+      "Bootstrap.",
+      "jQuery.",
+      "MySQL.",
+      "Photoshop.",
+      "GIMP.",
+      "Mongoose.",
+      "Tomcat.",
+      "Chrome DevTools."],
       typeSpeed: 50
     });
   });
