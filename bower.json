@@ -1,0 +1,21 @@
+{
+  "name": "mdeggies.github.io",
+  "homepage": "https://github.com/mdeggies/mdeggies.github.io",
+  "authors": [
+    "Michele Degges <mdeggies@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typed.js": "^1.1.1"
+  }
+}

@@ -1,20 +1,117 @@
-@media (max-width: 768px) {
-  .navbar.navbar-default .navbar-nav {
-    width: 100%;
-    text-align: center;
-    margin: 0;
+/*Navigation styling*/
+
+/*float nav links to the right*/
+.navbar .navbar-nav {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+  border: 0px;
+}
+
+.brand {
+  font-size: 28px;
+}
+
+.nav {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.nav-trans {
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition-duration: 1s;
+}
+
+/*display nav links on same line when nav is collapsed*/
+@media (max-width: 767px) {
+  .navbar .navbar-nav > li {
+    display: inline-flex;
   }
-  .navbar.navbar-default .navbar-right > li,
-  .navbar.navbar-default .navbar-left > li {
+  /*center nav links*/
+  .navbar .navbar-nav {
     display: inline-block;
+    float: none;
+    vertical-align: top;
   }
+}
+
+/*Content Styling*/
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.intro {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.intro > h1 {
+  padding-top: 100px;
+  letter-spacing: 5px;
+  font-size: 60px;
+  color: white;
+}
+
+.intro > h2 {
+  color: white;
+  margin-top: 0;
+}
+
+hr {
+  border: 2px solid white;
+  width: 8%;
+}
+
+.typing {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
 }
 
 .splash {
   background: url('images/splash.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
-  display: block;
-  position: relative;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
+  background-blend-mode: overlay;
+}
+
+/*Footer Styling*/
+table td {
+  border-top: none !important;
+}
+
+#footer {
+  height: 330px;
+  background-color: #f5f5f5;
+}
+
+.icons, .icons > a{
+  font-size: 40px;
+}
+
+.left-footer {
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.left-footer h3 {
+  font-size: 18px;
+}
+
+.right-footer {
+  padding-top: 40px;
+  padding-right: 80px;
 }
