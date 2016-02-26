@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -9,6 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="bower_components/typed.js/js/typed.js"></script>
+  <link rel="stylesheet" href="/libs/animate.css">
+  <script src="/libs/jquery.lettering-0.6.1.min.js"></script>
   <link rel="stylesheet" href="main.css">
   <script src="main.js"></script>
   <title>Michele Degges | Fullstack Web Developer</title>
@@ -28,7 +31,12 @@
             <a class="navbar-brand brand" href="#"><i class="fa fa-medium"></i></a>
           </div>
           <div class="collapse navbar-collapse" id="navbar">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a></li>
+              <li><a href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Home</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#experience">Experience</a></li>
@@ -37,146 +45,124 @@
             </ul>
           </div>
         </nav>
-        <div class="intro">
-          <h1><b>Michele Degges</b></h1>
+        <div class="intro animated zoomInDown">
+          <h1 class="fancy_name">Michele Degges</h1>
           <hr>
           <h2>Javascript Developer @ CodingHouse</h2>
           <h2>Exploring Code and Design in SF</h2>
           <span class="formatting">I love to work with <span class="typing formatting"></span>
         </div>
+        <div class="links">
+          <button><a href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i> Github</a></button>
+          <button><a href="#projects"><i class="fa fa-tv"></i> Projects</a></button>
+          <button><a href="#"><i class="fa fa-star-o"></i> Resume</a></button>
+        </div>
+        <img class="img-responsive img-circle logo" src="images/me.png">
       </div>
     </div>
   </div>
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-
-bower_components	images			main.js
-SITE_DOMAIN = document.location.hostname||window.location.hostname||'www.barnesandnoble.com',
-SITE_PORT = document.location.port||window.location.port||'80',
-THIS_PATH = document.location.pathname||window.location.pathname||'/cartridges/PageSlot/PageSlot.jsp',
-SITE_DOMAIN_URL = THIS_PAGE = SITE_ROOT = port = "",
-STATIC_ASSETS_PATH = "/static",
-webContextRoot ='',
-staticAssetVersion = '?v3.2.3',
-XHR_FOLDER ='/xhr',
-XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp',
-PAGE_DEBUG_MODE = false;
-if(SITE_PROTOCOL=="https:") {
-XHR_FOLDER = '/xhr';
-XHR_HANDLER_PATH = XHR_FOLDER+'/handler.jsp';
-}
-if(SITE_PORT.length > 0 && SITE_PORT!=80)
-port = ":"+SITE_PORT;
-SITE_DOMAIN_URL = SITE_PROTOCOL + "//" + SITE_DOMAIN + port;
-SITE_ROOT = SITE_DOMAIN_URL + webContextRoot;
-THIS_PAGE = SITE_DOMAIN_URL + THIS_PATH;
-port = null;
-function consoleLog() {
-if (PAGE_DEBUG_MODE!==true) return;
-if (typeof console != "undefined" && typeof console.log != "undefined") {
-if (typeof console.log.apply != "undefined") {
-console.log.apply(console,arguments);
-} else {
-for(var i=0;i<arguments.length;i++) {
-var arg = arguments[i];
-console.log(arg);
-}
-}
-}
-}
-function consoleWarn() {
-if (PAGE_DEBUG_MODE!==true) return;
-if (typeof console == "undefined") return;
-if (typeof console.warn != "undefined" && typeof console.warn.apply != "undefined") {
-console.warn.apply(console,arguments);
-} else {
   <div class="container-fluid">
-    <!--BEGIN FOOTER-->
-    <footer class="footer" id="footer">
-      <div class="container">
-        <div class="row">
-          <!---LEFT FOOTER--->
-          <div class="col-md-6 col-sm-6 left-footer">
+    <div class="row-fluid second-page">
+      <div class="col-sm-6 twitter">
+        <h1>Social Media</h1>
+        <h4>See what I'm excited about</h3>
+          <a class="twitter-timeline" href="https://twitter.com/mdeggies" data-widget-id="703093020799860737">Tweets by @mdeggies</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <div class="col-sm-6 experience">
+          <h1>Experience</h1>
+          <p>Experience</p>
+          <p>Experience</p>
+          <p>Experience</p>
+          <p>Experience</p>
+          <p>Experience</p>
+          <p>Experience</p>
+          <p>Experience</p>
+          <p>Experience</p>
+          <p>Experience</p>
+          <p>Experience</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid third-page">
+        <h1>Projects</h1>
+        <div class="col-sm-3 projects">
+          <p>Projects</p>
+          <p>Projects</p>
+        </div>
+        <div class="col-sm-3 projects">
+          <p>Projects</p>
+          <p>Projects</p>
+        </div>
+        <div class="col-sm-3 projects">
+          <p>Projects</p>
+          <p>Projects</p>
+        </div>
+        <div class="col-sm-3 projects">
+          <p>Projects</p>
+          <p>Projects</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="contact row">
+        <div class="col-sm-6 col-sm-offset-3 form-box">
+          <div class="form-top">
+            <h3>Contact Me</h3>
+          </div>
+          <div class="form-bottom contact-form">
+            <form role="form" action="assets/contact.php" method="post">
+              <div class="form-group">
+                <label class="sr-only" for="contact-email">Email</label>
+                <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contact-subject">Subject</label>
+                <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contact-message">Message</label>
+                <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+              </div>
+              <button type="submit" class="btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <footer class="text-center">
+        <div class="footer-above">
+          <div class="container">
             <div class="row">
-              <div class="col-sm-2 icons">
-                <i class="fa fa-map-marker"></i>
+              <div class="footer-col col-md-6">
+                <h3>Location</h3>
+                <p>San Fransisco, California</p>
               </div>
-              <div class="col-sm-10 text">
-                <h3>Fremont, CA</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-2 icons">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-sm-10 text">
-                <h3>+1 812 391 4441</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-2 icons">
-                <i class="fa fa-envelope"></i>
-              </div>
-              <div class="col-sm-10 text">
-                <h3><a href="mailto:mdeggies@gmail.com?Subject=Greetings,%20Michele!" target="_top">
-                  mdeggies@gmail.com</a></h3>
-                </div>
-              </div>
-            </div>
-            <!---RIGHT FOOTER--->
-            <div class="col-md-6 col-sm-6 right-footer">
-              <div class="text">
-                <h2>About Me</h2>
-                <p> as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites s</p>
-              </div>
-              <div class="icons">
-                <a href="https://www.facebook.com/michele.degges"><i class="fa fa-facebook-square"></i></a>
-                <a href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a>
-                <a href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a>
-                <a href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a>
+              <div class="footer-col col-md-6">
+                <h3>Keep In Touch!</h3>
+                <ul class="list-inline">
+                  <li><a class="btn-social btn-outline" href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a></li>
+                  <li><a class="btn-social btn-outline" href="mailto:mdeggies@gmail.com?" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
+                  <li><a class="btn-social btn-outline" href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a></li>
+                  <li><a class="btn-social btn-outline" href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</body>
-</html>
+        <div class="footer-below">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                © 2016 Michele Degges
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+  </html>
