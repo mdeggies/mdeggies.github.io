@@ -352,3 +352,7 @@ footer .footer-below {
   text-align: center;
   padding-top: 20px;
 }
+
+#scrollArea, .container-fluid {
+  padding: 0px !important;
+}
