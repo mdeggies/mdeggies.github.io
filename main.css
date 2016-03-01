@@ -1,3 +1,14 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Angular Scroll*/
+
+#scrollArea {
+  height: 100%;
+  overflow: auto;
+}
+
 /*Navigation styling*/
 
 /*float nav links to the right*/
@@ -11,9 +22,22 @@
   padding-bottom: 20px;
 }
 
-.navbar .navbar-nav li a:hover {
-  color: pink;
+/*change color of icon bar on collapse*/
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FC239D;
 }
+
+/*.navbar .navbar-collapse {
+background-color: white;
+color: #FC239D;
+}*/
+
+/*change navbar hover color*/
+
+.nav.navbar-nav li a:hover {
+  color: red;
+}
+
 
 .navbar .navbar-collapse {
   text-align: center;
@@ -35,17 +59,25 @@
   transition-duration: 1s;
 }
 
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /*display nav links on same line when nav is collapsed*/
 @media (max-width: 767px) {
-  .navbar .navbar-nav > li {
-    display: inline-flex;
+  .navbar.navbar-default .navbar-nav {
+    width: 100%;
+    text-align: center;
+    margin: 0;
   }
-  /*center nav links*/
-  .navbar .navbar-nav {
+  .navbar.navbar-default .navbar-right > li,
+  .navbar.navbar-default .navbar-left > li {
     display: inline-block;
-    float: none;
-    vertical-align: top;
   }
+  /*.navbar-collapse.collapse {
+  background-color: white;
+  color: black;
+  }*/
 }
 
 /*Typed Text Animation*/
@@ -72,7 +104,6 @@
 }
 
 /*Content Styling*/
-
 .container {
   height: 100%;
 }
@@ -98,7 +129,7 @@
   margin-top: 0;
 }
 
-hr {
+.intro > hr {
   border: 2px solid white;
   width: 8%;
 }
@@ -125,49 +156,65 @@ hr {
 .logo {
   position: absolute;
   width: 12%;
-  left: 41%;
+  left: 44%;
   top: 90vh;
   display: block;
 }
 
+.fancy_name {
+  clear: both;
+  display: inline-block;
+
+  white-space: nowrap;
+}
+
 /*Github, Projects, and Resume Link*/
 .links {
+  position: relative;
+  display: block;
   text-align: center;
-  top: 62%;
+  top: 78%;
   left: 50%;
   transform: translate3d(-50%,-50%,0);
-  position: relative;
   font-family: 'Raleway', sans-serif;
 }
 
-.links > button {
+.links > .btn {
   margin: 0px 10px;
   padding: 5px 20px;
   background: none;
   border: 1px solid #f1f1f1;
   border-radius: 5px;
   font-size: 1em;
-}
-
-a {
+  text-decoration: none;
   color: white;
 }
 
-a:hover, button:hover {
+.links > .btn:hover {
+  color: #FC239D;
   background-color: white;
-  color: black;
-  text-decoration: none;
 }
 
+/****Experience Styling*****/
+.media-body, .media-left, .media-right {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
 /******Second page*******/
-.second-page {
-  padding-top: 100px;
+.page {
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
-.twitter h1 {
-
+.contact {
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 100px;
 }
+
 
 /*******Footer******/
 html  {
@@ -225,3 +272,83 @@ footer .footer-below {
 }
 
 /*Contact form*/
+
+
+/**Gallery**/
+#links {
+  display: none;
+}
+
+#blueimp-gallery-carousel {
+  padding-top: 20px;
+}
+
+.blueimp-gallery > .description {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  color: #fff;
+  display: none;
+}
+
+.blueimp-gallery-controls > .description {
+  display: block;
+  color: #FC239D;
+  text-decoration: bold;
+}
+
+.blueimp-gallery > .next:hover, .blueimp-gallery > .prev:hover {
+  color: #FC239D;
+  border: 3px solid #FC239D;
+}
+
+.blueimp-gallery {
+  background-color: white;
+}
+
+/***SKILLS*/
+
+#skills {
+  text-align: center;
+  background: #f0f0f0;
+  color: #555;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 18px;
+
+}
+
+#skills > i {
+  font-size: 20px;
+}
+
+.i-social {
+  background-color: white;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.i-outline {
+  color: #FC239D;
+  font-size: 20px;
+  border: solid 2px #000;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.header {
+  padding-top: 20px;
+}
+
+.spacing {
+  text-align: center;
+  padding-top: 20px;
+}

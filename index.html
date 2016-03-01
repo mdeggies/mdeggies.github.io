@@ -8,161 +8,282 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Gilda+Display|Playfair+Display' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-  <script src="bower_components/typed.js/js/typed.js"></script>
-  <link rel="stylesheet" href="/libs/animate.css">
-  <script src="/libs/jquery.lettering-0.6.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.18.1/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="./libs/css/animate.css">
+  <link rel="stylesheet" href="./libs/font-mfizz-2.2/font-mfizz.css">
   <link rel="stylesheet" href="main.css">
-  <script src="main.js"></script>
   <title>Michele Degges | Fullstack Web Developer</title>
 </head>
-<body ng-app="mdegges" ng-controller="mainCtrl" class="ng-scope">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="splash col-sm-12">
-        <nav class="navbar navbar-default navbar-fixed-top nav-trans">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand brand" href="#"><i class="fa fa-medium"></i></a>
+<body ng-app="mdegges">
+  <div class="container-fluid" id="scrollArea" ng-controller="scrollCtrl">
+    <div class="container-fluid splash-container">
+      <div class="row-fluid">
+        <div class="splash col-xs-12 col-sm-12 col-md-12">
+          <nav class="navbar navbar-default navbar-fixed-top nav-trans">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand brand" href="#"><i class="fa fa-medium"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li><a ng-click="gotoElement('experience')">Experience</a></li>
+                <li><a ng-click="gotoElement('projects')">Projects</a></li>
+                <li><a href="http://mdegges.com">Blog</a></li>
+                <li><a ng-click="gotoElement('contact')">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="intro animated zoomInDown">
+            <h1 class="fancy_name">Michele Degges</h1>
+            <hr>
+            <h2>Fullstack Javascript Developer</h2>
+            <h2>Exploring Code and Design in SF</h2>
+            <span class="formatting">I love to work with <span class="typing formatting"></span>
           </div>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="nav navbar-nav navbar-left">
-              <li><a href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a></li>
-              <li><a href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="http://mdegges.com">Blog</a></li>
-              <li><a href="http://mdegges.com">Contact</a></li>
-            </ul>
+          <div class="links">
+            <a href="https://github.iu.edu/mdegges" class="btn btn-default"><i class="fa fa-github-square"></i> Github</a>
+            <a href="#projects" class="btn btn-default"><i class="fa fa-tv"></i> Projects</a>
+            <a href="http://mdegges.com/assets/resume.pdf" class="btn btn-default"><i class="fa fa-star-o"></i> Resume</a>
           </div>
-        </nav>
-        <div class="intro animated zoomInDown">
-          <h1 class="fancy_name">Michele Degges</h1>
-          <hr>
-          <h2>Javascript Developer @ CodingHouse</h2>
-          <h2>Exploring Code and Design in SF</h2>
-          <span class="formatting">I love to work with <span class="typing formatting"></span>
+          <img class="img-responsive img-circle logo" src="images/me.png">
         </div>
-        <div class="links">
-          <button><a href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i> Github</a></button>
-          <button><a href="#projects"><i class="fa fa-tv"></i> Projects</a></button>
-          <button><a href="#"><i class="fa fa-star-o"></i> Resume</a></button>
-        </div>
-        <img class="img-responsive img-circle logo" src="images/me.png">
       </div>
     </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row-fluid second-page">
-      <div class="col-sm-6 twitter">
-        <h1>Social Media</h1>
-        <h4>See what I'm excited about</h3>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-xs-6 col-sm-6 col-md-6 twitter page">
+          <div class="header">
+            <h1>Social Media</h1>
+            <h4>See what I'm excited about</h4>
+            <hr>
+          </div>
           <a class="twitter-timeline" href="https://twitter.com/mdeggies" data-widget-id="703093020799860737">Tweets by @mdeggies</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
-        <div class="col-sm-6 experience">
-          <h1>Experience</h1>
-          <p>Experience</p>
-          <p>Experience</p>
-          <p>Experience</p>
-          <p>Experience</p>
-          <p>Experience</p>
-          <p>Experience</p>
-          <p>Experience</p>
-          <p>Experience</p>
-          <p>Experience</p>
-          <p>Experience</p>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row-fluid third-page">
-        <h1>Projects</h1>
-        <div class="col-sm-3 projects">
-          <p>Projects</p>
-          <p>Projects</p>
-        </div>
-        <div class="col-sm-3 projects">
-          <p>Projects</p>
-          <p>Projects</p>
-        </div>
-        <div class="col-sm-3 projects">
-          <p>Projects</p>
-          <p>Projects</p>
-        </div>
-        <div class="col-sm-3 projects">
-          <p>Projects</p>
-          <p>Projects</p>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="contact row">
-        <div class="col-sm-6 col-sm-offset-3 form-box">
-          <div class="form-top">
-            <h3>Contact Me</h3>
+        <div class="col-xs-6 col-sm-6 col-md-6 gallery page" id="gallery">
+          <h1 class="header">Gallery</h1>
+          <h4>See where I've been</h4>
+          <hr>
+          <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <p class="description"></p>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <ol class="indicator"></ol>
           </div>
-          <div class="form-bottom contact-form">
-            <form role="form" action="assets/contact.php" method="post">
-              <div class="form-group">
-                <label class="sr-only" for="contact-email">Email</label>
-                <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="contact-subject">Subject</label>
-                <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="contact-message">Message</label>
-                <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
-              </div>
-              <button type="submit" class="btn">Send</button>
-            </form>
+          <div id="links">
+            <a href="./images/gallery/1.png" title="SF Hike" data-description="Hiking around SF after the Launch Hackathon" data-gallery>
+              <img src="./images/gallery/1.png" alt="Hiking in SF">
+            </a>
+            <a href="./images/gallery/2.png" title="Hackathon" data-description="Coding with the team at the Launch Hackathon" data-gallery>
+              <img src="./images/gallery/2.png" alt="Hackathon">
+            </a>
+            <a href="./images/gallery/3.png" title="Forward JS Conference" data-description="At the Forward JS Web Technology Conference" data-gallery>
+              <img src="./images/gallery/3.png" alt="Forward JS Conference">
+            </a>
           </div>
         </div>
       </div>
     </div>
+    <!-------SKILLS------>
     <div class="container-fluid">
-      <footer class="text-center">
-        <div class="footer-above">
-          <div class="container">
-            <div class="row">
-              <div class="footer-col col-md-6">
-                <h3>Location</h3>
-                <p>San Fransisco, California</p>
+      <div class-"row-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 skills" id="skills">
+          <p><i class="icon-nodejs i-social i-outline"></i> NodeJS
+          <i class="icon-javascript i-social i-outline"></i> Javascript
+          <i class="icon-java i-social i-outline"></i> Java
+          <i class="icon-c i-social i-outline"></i> C</p>
+          <p><i class="icon-python i-social i-outline"></i> Python
+          <i class="icon-html i-social i-outline"></i> HTML
+          <i class="icon-mongodb i-social i-outline"></i> Mongo
+          <i class="icon-database i-social i-outline"></i> MySQL</p>
+          <p><i class="icon-heroku i-social i-outline"></i> Heroku
+          <i class="icon-aws i-social i-outline"></i> AWS
+          <i class="icon-iphone i-social i-outline"></i> Android</p>
+        </div>
+      </div>
+    </div>
+    <!-------EXPERIENCE------>
+    <div class="container-fluid">
+      <div class-"row-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 experience" id="experience">
+          <div class="header spacing">
+            <h1>Experience<h1>
+              <h4>Check out the places I've worked</h4>
+              <hr>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
+              <div class="media">
+                <div class="media-left">
+                  <a href="http://codinghouse.co/"><img src="./images/logos/work/ch-logo.png" alt="CodingHouse" style="width: 150px; height: auto;"></a>
+                </div>
+                <div class="media-body">
+                  <h4>CodingHouse</h4> - <span style="color: #c2c2c2">Fullstack Code Mentor</span></h4>
+                  <ul>
+                    <li>Mentored students on Fullstack web development throughout a 14-week intensive Coding Bootcamp</li>
+                    <li>Lead workshops on best practices and wrote articles on related topics</li>
+                    <li>Programmed in Javascript, jQuery, Angular, and HTML/CSS</li>
+                  </ul>
+                </div>
               </div>
-              <div class="footer-col col-md-6">
-                <h3>Keep In Touch!</h3>
-                <ul class="list-inline">
-                  <li><a class="btn-social btn-outline" href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a></li>
-                  <li><a class="btn-social btn-outline" href="mailto:mdeggies@gmail.com?" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
-                  <li><a class="btn-social btn-outline" href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a></li>
-                  <li><a class="btn-social btn-outline" href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a></li>
-                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
+              <div class="media">
+                <div class="media-left">
+                  <a href="http://motion.pratt.duke.edu/"><img src="./images/logos/work/iml-logo.png" alt="IML" style="width: 150px; height: auto;"></a>
+                </div>
+                <div class="media-body">
+                  <h4>Intelligent Motion Lab</h4> - <span style="color: #c2c2c2">Undergraduate Researcher</span></h4>
+                  <ul>
+                    <li>Worked as part of the DARPA Robotics Challenge Team</li>
+                    <li>Our goal was to create a robot capable of assisting humans as they respond to natural and man-made disasters</li>
+                    <li>Contributed to my team's image recognition and collision detection software by solving the image registration problem</li>
+                    <li>Programmed in C++</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
+              <div class="media">
+                <div class="media-left">
+                  <a href="https://www.discipleshomemissions.org/"><img src="./images/logos/work/dhm-logo.jpg" alt="DHM" style="width: 150px; height: auto;"></a>
+                </div>
+                <div class="media-body">
+                  <h4>DHM</h4> - <span style="color: #c2c2c2">Graphic Design Intern</span></h4>
+                  <ul>
+                    <li>Redesigned the layout of the Disciples Advocate, a newsletter that’s distributed to over 10,000 people worldwide</li>
+                    <li>Published the Fall 2012 version of the Advocate and Justice Primer</li>
+                    <li>Worked in Adobe InDesign, Photoshop, and GIMP</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
+              <div class="media">
+                <div class="media-left">
+                  <a href="http://phitlab.org/"><img src="./images/logos/work/pl-logo.png" alt="PhitLab" style="width: 150px; height: auto;"></a>
+                </div>
+                <div class="media-body">
+                  <h4>PHIT Lab</h4> - <span style="color: #c2c2c2">Research Assistant</span></h4>
+                  <ul>
+                    <li>Investigated how technologies can be used to empower people to manage and improve their own health and make healthy choices</li>
+                    <li>Designed, developed, and became the webmistress of the PHIT Lab website, phitlab.org</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-below">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                © 2016 Michele Degges
+      </div>
+      <!-----PROJECTS---->
+      <div class="container-fluid">
+        <div class-"row-fluid page">
+          <div class="col-xs-12 col-sm-12 col-md-12 experience" id="projects">
+            <div class="header page">
+              <h1>Projects<h1>
+                <h4>Check out the projects I've worked on</h4>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
+                <div class="media">
+                  <div class="media-left">
+                    <a href="http://www.amazon.com/PHIT-Lab-HealthyState/dp/B007V6H5TU"><img src="./images/logos/work/hs-logo.png" alt="HealthyState" style="width: 150px; height: auto;"></a>
+                  </div>
+                  <div class="media-body">
+                    <h4>HealthyState</h4> - <span style="color: #c2c2c2">Team Leader & Co-Programmer</span></h4>
+                    <ul>
+                      <li>Developed an android app that makes use of public health data and informs people about the prevalence of common diseases in the United States.</li>
+                      <li>HealthyState placed third out of 51 entries and won $3,000 and $1,000 in travel funds in the Institute of Medicine’s Health Data Collegiate Challenge</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+        <!-----CONTACT---->
+        <div class="container-fluid">
+          <div class="contact row-fluid" id="contact">
+            <div class="col-xs-6 col-sm-6 col-md-6 form-box">
+              <div class="form-top">
+                <h3>Contact Me</h3>
+              </div>
+              <div class="form-bottom contact-form">
+                <form role="form" action="assets/contact.php" method="post">
+                  <div class="form-group">
+                    <label class="sr-only" for="contact-email">Email</label>
+                    <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="contact-subject">Subject</label>
+                    <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="contact-message">Message</label>
+                    <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                  </div>
+                  <button type="submit" class="btn">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <footer class="text-center" id="footer">
+            <div class="footer-above">
+              <div class="container-fluid">
+                <div class="row-fluid">
+                  <div class="footer-col col-xs-6 col-sm-6 col-md-6">
+                    <h3>Location</h3>
+                    <p>San Fransisco, California</p>
+                  </div>
+                  <div class="footer-col col-xs-6 col-sm-6 col-md-6">
+                    <h3>Keep In Touch!</h3>
+                    <ul class="list-inline">
+                      <li><a class="btn-social btn-outline" href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a></li>
+                      <li><a class="btn-social btn-outline" href="mailto:mdeggies@gmail.com?" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
+                      <li><a class="btn-social btn-outline" href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a></li>
+                      <li><a class="btn-social btn-outline" href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-below">
+              <div class="container-fluid">
+                <div class="row-fluid">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    © 2016 Michele Degges
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+<script src="./libs/js/jquery.blueimp-gallery.min.js"></script>
+<script src="bower_components/typed.js/js/typed.js"></script>
+<script src="./libs/js/jquery.lettering-0.6.1.min.js"></script>
+<script src="./js/navbarChanger.js"></script>
+<script src="./js/textAnimate.js"></script>
+<script src="./js/pageScroll.js"></script>
+<script src="./js/gallery.js"></script>
+</body>
+</html>

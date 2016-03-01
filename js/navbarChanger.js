@@ -1,8 +1,13 @@
+'use strict';
+
 $(document).ready(function() {
-  /*Navbar color changer*/
   var scroll_start = 0;
   var startchange = $('.nav-trans');
   var offset = startchange.offset();
+
+  var $navText;
+  var $navBrand;
+  var $navbar;
 
   $navText = $('.nav.navbar-nav li a');
   $navBrand = $('.brand');
@@ -25,37 +30,5 @@ $(document).ready(function() {
       $navText.css('color', 'rgba(255,255,255,1)');
       $navbar.css('border', '0px');
     }
-  });
-  /*fancy name animation*/
-  /*$(".fancy_name").lettering();
-  for (var i=0; i<15; i++) {
-    //console.log($(".char"+i));
-    $(".char"+i).on("mouseover", function() {
-      //console.log('mouseover');
-      this.className += " animated slideIn";
-    });
-  }*/
-  /*Typing script*/
-  $(function() {
-    $(".typing").typed({
-      strings: ["Javascript.",
-      "Node.",
-      "Angular.",
-      "Mongo.",
-      "Heroku.",
-      "Express.",
-      "Bootstrap.",
-      "jQuery.",
-      "MySQL.",
-      "Photoshop.",
-      "GIMP.",
-      "Mongoose.",
-      "Tomcat.",
-      "Chrome DevTools."],
-      typeSpeed: 100,
-      backSpeed: 150,
-      startDelay: 850,
-      loop: true
-    });
   });
 });
