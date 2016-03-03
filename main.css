@@ -284,9 +284,10 @@ footer .footer-below {
 }
 
 #blueimp-gallery-carousel {
-  padding-top: 20px;
+  margin: 10px 10px 10px 10px;
 }
 
+/*UNCOMMENT TO MAKE DESCRIPTION STYLING VISIBLE
 .blueimp-gallery > .description {
   position: absolute;
   top: 75%;
@@ -299,6 +300,10 @@ footer .footer-below {
   display: block;
   color: #FC239D;
   text-decoration: bold;
+}*/
+
+.title {
+  text-align: center;
 }
 
 .blueimp-gallery > .next:hover, .blueimp-gallery > .prev:hover {
@@ -308,6 +313,16 @@ footer .footer-below {
 
 .blueimp-gallery {
   background-color: white;
+}
+
+/*make gallery div go under twitter on small devices*/
+@media (max-width: 600px) {
+  .gallery, .twitter {
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+  }
 }
 
 /***SKILLS*/
