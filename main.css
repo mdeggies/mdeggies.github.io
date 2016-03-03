@@ -147,11 +147,11 @@ color: #FC239D;
 
 /*Background image styling*/
 .splash {
-  background: url('images/splash.jpeg');
+  /*background: url('images/splash.jpeg');*/
   background-repeat: no-repeat;
   background-size: cover;
   height: 98vh;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
   background-blend-mode: overlay;
   position: relative;
 }
