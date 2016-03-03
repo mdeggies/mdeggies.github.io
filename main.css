@@ -9,6 +9,10 @@ body {
   overflow: auto;
 }
 
+#scrollArea, .container-fluid {
+  padding: 0px !important;
+}
+
 /*Navigation styling*/
 
 /*float nav links to the right*/
@@ -307,7 +311,6 @@ footer .footer-below {
 }
 
 /***SKILLS*/
-
 #skills {
   text-align: center;
   background: #f0f0f0;
@@ -317,7 +320,6 @@ footer .footer-below {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   font-size: 18px;
-
 }
 
 #skills > i {
@@ -353,6 +355,8 @@ footer .footer-below {
   padding-top: 20px;
 }
 
-#scrollArea, .container-fluid {
-  padding: 0px !important;
+/*CONTACT FORM*/
+.form {
+  margin-left: 12%;
+  padding-bottom: 50px;
 }
