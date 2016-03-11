@@ -37,10 +37,11 @@
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Home</a></li>
+                <li><a ng-click="gotoElement('social')">Social</a></li>
                 <li><a ng-click="gotoElement('experience')">Experience</a></li>
                 <li><a ng-click="gotoElement('projects')">Projects</a></li>
                 <li><a href="mdeggies.github.io/blog">Blog</a></li>
-                <li><a ng-click="gotoElement('contact')">Contact</a></li>
+                <li><a href="mailto:mdeggies@gmail.com?">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -60,9 +61,9 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="social">
       <div class="row-fluid">
-        <div class="col-xs-6 col-sm-6 col-md-6 twitter page">
+        <div class="col-xs-12 col-sm-6 col-md-6 twitter page">
           <div class="header">
             <h1>Social Media</h1>
             <h4>See what I'm excited about</h4>
@@ -71,7 +72,7 @@
           <a class="twitter-timeline" href="https://twitter.com/mdeggies" data-widget-id="703093020799860737">Tweets by @mdeggies</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 gallery page" id="gallery">
+        <div class="col-xs-12 col-sm-6 col-md-6 gallery page" id="gallery">
           <h1 class="header">Gallery</h1>
           <h4>See where I've been</h4>
           <hr>
@@ -100,9 +101,9 @@
       </div>
     </div>
     <!-------SKILLS------>
-    <div class="container-fluid">
+    <div class="container-fluid" id="skills">
       <div class-"row-fluid">
-        <div class="col-xs-12 col-sm-12 col-md-12 skills" id="skills">
+        <div class="col-xs-12 col-sm-12 col-md-12 skills">
           <p><i class="icon-nodejs i-social i-outline"></i> NodeJS
             <i class="icon-javascript i-social i-outline"></i> Javascript
             <i class="icon-java i-social i-outline"></i> Java
@@ -118,167 +119,165 @@
             </div>
           </div>
           <!-------EXPERIENCE------>
-          <div class="container-fluid">
-            <div class-"row-fluid">
-              <div class="col-xs-12 col-sm-12 col-md-12 experience" id="experience">
-                <div class="header spacing">
-                  <h1>Experience<h1>
-                    <h4>Check out the places I've worked</h4>
-                    <hr>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="http://codinghouse.co/"><img src="./images/logos/work/ch-logo.png" alt="CodingHouse" style="width: 150px; height: auto;"></a>
-                      </div>
-                      <div class="media-body">
-                        <h4>CodingHouse</h4> - <span style="color: #c2c2c2">Fullstack Code Mentor</span></h4>
-                        <ul>
-                          <li>Mentored students on Fullstack web development throughout a 14-week intensive Coding Bootcamp</li>
-                          <li>Lead workshops on best practices and wrote articles on related topics</li>
-                          <li>Programmed in Javascript, jQuery, Angular, and HTML/CSS</li>
-                        </ul>
-                      </div>
+          <div class="container-fluid experience" id="experience">
+            <div class="header spacing">
+              <h1>Experience<h1>
+                <h4>Check out the places I've worked</h4>
+                <hr>
+              </div>
+              <div class="refTable">
+                <div class="refRow row-fluid">
+                  <div class="refCell col-xs-12 col-sm-6 col-md-6">
+                    <img class="fadePic scale img-rounded thumbnail center-block" src="./images/work-images/ch.png" width="280px">
+                    <div class="info">
+                      <h2 class="center">CodingHouse</h2>
+                      <span class="center" style="color: #c2c2c2">Fullstack Code Mentor</span>
+                      <ul class="left">
+                        <li>Mentored students on Fullstack web development during an intensive Coding Bootcamp</li>
+                        <li>Lead workshops on best practices and wrote articles on related topics</li>
+                        <li>Programmed in Javascript, jQuery, Angular, and HTML/CSS</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="http://motion.pratt.duke.edu/"><img src="./images/logos/work/iml-logo.png" alt="IML" style="width: 150px; height: auto;"></a>
-                      </div>
-                      <div class="media-body">
-                        <h4>Intelligent Motion Lab</h4> - <span style="color: #c2c2c2">Undergraduate Researcher</span></h4>
-                        <ul>
-                          <li>Worked as part of the DARPA Robotics Challenge Team</li>
-                          <li>Our goal was to create a robot capable of assisting humans as they respond to natural and man-made disasters</li>
-                          <li>Contributed to my team's image recognition and collision detection software by solving the image registration problem</li>
-                          <li>Programmed in C++</li>
-                        </ul>
-                      </div>
+                  <div class="refCell col-xs-12 col-sm-6 col-md-6">
+                    <img class="fadePic scale img-rounded thumbnail center-block" src="./images/work-images/iml.png" width="280px">
+                    <div class="info">
+                      <h2 class="center">Intelligent Motion Lab</h2>
+                      <span class="center" style="color: #c2c2c2">Undergraduate Researcher</span>
+                      <ul class="left">
+                        <li>Worked as part of the DARPA Robotics Challenge Team on a robot that assists humans in disasters</li>
+                        <li>Contributed to my team's image recognition and collision detection software by solving the image registration problem</li>
+                        <li>Programmed in C++</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="https://www.discipleshomemissions.org/"><img src="./images/logos/work/dhm-logo.jpg" alt="DHM" style="width: 150px; height: auto;"></a>
-                      </div>
-                      <div class="media-body">
-                        <h4>DHM</h4> - <span style="color: #c2c2c2">Graphic Design Intern</span></h4>
-                        <ul>
-                          <li>Redesigned the layout of the Disciples Advocate, a newsletter that’s distributed to over 10,000 people worldwide</li>
-                          <li>Published the Fall 2012 version of the Advocate and Justice Primer</li>
-                          <li>Worked in Adobe InDesign, Photoshop, and GIMP</li>
-                        </ul>
-                      </div>
+                  <div class="refCell col-xs-12 col-sm-6 col-md-6">
+                    <img class="fadePic scale img-rounded thumbnail center-block" src="./images/work-images/pl.png" width="280px">
+                    <div class="info">
+                      <h2 class="center">Pervasive Health Information Technologies Lab</h2>
+                      <span class="center" style="color: #c2c2c2">Research Assistant</span>
+                      <ul class="left">
+                        <li>Investigated how technologies can be used to empower people to manage and improve their own health and make healthy choices</li>
+                        <li>Designed, developed, and became the webmistress of the PHIT Lab website, phitlab.org</li>
+                        <li>Team leader and co-programmer of an award-winning android app, HealthyState</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
-                    <div class="media">
-                      <div class="media-left">
-                        <a href="http://phitlab.org/"><img src="./images/logos/work/pl-logo.png" alt="PhitLab" style="width: 150px; height: auto;"></a>
-                      </div>
-                      <div class="media-body">
-                        <h4>PHIT Lab</h4> - <span style="color: #c2c2c2">Research Assistant</span></h4>
-                        <ul>
-                          <li>Investigated how technologies can be used to empower people to manage and improve their own health and make healthy choices</li>
-                          <li>Designed, developed, and became the webmistress of the PHIT Lab website, phitlab.org</li>
-                        </ul>
-                      </div>
+                  <div class="refCell col-xs-12 col-sm-6 col-md-6">
+                    <img class="fadePic scale img-rounded thumbnail center-block" src="./images/work-images/dhm.png" width="280px">
+                    <div class="info">
+                      <h2 class="center">Disciples Home Missions</h2>
+                      <span class="center" style="color: #c2c2c2">Graphic Design Intern</span>
+                      <ul class="left">
+                        <li>Redesigned the layout of the Disciples Advocate, a newsletter that’s distributed to over 10,000 people worldwide</li>
+                        <li>Published the Fall 2012 version of the Advocate and Justice Primer</li>
+                        <li>Worked in Adobe InDesign, Photoshop, and GIMP</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-----PROJECTS---->
-            <div class="container-fluid">
-              <div class-"row-fluid page">
-                <div class="col-xs-12 col-sm-12 col-md-12 experience" id="projects">
-                  <div class="header spacing">
-                    <h1>Projects<h1>
-                      <h4>Check out the projects I've worked on</h4>
-                      <hr>
+
+
+            <!---
+
+          </div>
+          <div class="refRow">
+          <div class="refCell">
+          <img class="fadePic scale" src="./images/work-images/img.jpg" />
+          <div class="info">
+          <h2 class="center">Pervasive Health Information Technologies Lab</h2>
+          <span class="center" style="color: #c2c2c2">Research Assistant</span>
+          <ul class="left">
+          <li>Investigated how technologies can be used to empower people to manage and improve their own health and make healthy choices</li>
+          <li>Designed, developed, and became the webmistress of the PHIT Lab website, phitlab.org</li>
+          <li>Team leader and co-programmer of an award-winning android app, HealthyState</li>
+        </ul>
+
+        <!-----PROJECTS---->
+        <div class="container-fluid" id="projects">
+          <div class-"row-fluid page">
+            <div class="col-xs-12 col-sm-12 col-md-12 experience">
+              <div class="header spacing">
+                <h1>Projects<h1>
+                  <h4>Check out the projects I've worked on</h4>
+                  <hr>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="http://www.amazon.com/PHIT-Lab-HealthyState/dp/B007V6H5TU"><img src="./images/logos/work/hs-logo.png" alt="HealthyState" style="width: 150px; height: auto;"></a>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 35px;">
-                      <div class="media">
-                        <div class="media-left">
-                          <a href="http://www.amazon.com/PHIT-Lab-HealthyState/dp/B007V6H5TU"><img src="./images/logos/work/hs-logo.png" alt="HealthyState" style="width: 150px; height: auto;"></a>
-                        </div>
-                        <div class="media-body">
-                          <h4>HealthyState</h4> - <span style="color: #c2c2c2">Team Leader & Co-Programmer</span></h4>
-                          <ul>
-                            <li>Developed an android app that makes use of public health data and informs people about the prevalence of common diseases in the United States.</li>
-                            <li>HealthyState placed third out of 51 entries and won $3,000 and $1,000 in travel funds in the Institute of Medicine’s Health Data Collegiate Challenge</li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="media-body">
+                      <h4>HealthyState</h4> - <span style="color: #c2c2c2">Team Leader & Co-Programmer</span></h4>
+                      <ul>
+                        <li>Developed an android app that makes use of public health data and informs people about the prevalence of common diseases in the United States.</li>
+                        <li>HealthyState placed third out of 51 entries and won $3,000 and $1,000 in travel funds in the Institute of Medicine’s Health Data Collegiate Challenge</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-----CONTACT---->
-              <div class="container-fluid">
-                <div class="contact row-fluid page spacing" id="contact">
-                  <div class="col-xs-9 col-sm-9 col-md-9 form form-box">
-                    <div class="form-top">
-                      <div class="form-top-left">
-                        <h1>Contact me</h1>
-                        <p>Fill in the form below to get in touch</p>
-                        <hr>
-                      </div>
-                    </div>
-                    <div class="form-bottom contact-form">
-                      <form role="form" action="assets/contact.php" method="post">
-                        <div class="form-group">
-                          <label class="sr-only" for="contact-email">Email</label>
-                          <input type="email" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
-                        </div>
-                        <div class="form-group">
-                          <label class="sr-only" for="contact-subject">Subject</label>
-                          <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
-                        </div>
-                        <div class="form-group">
-                          <label class="sr-only" for="contact-message">Message</label>
-                          <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container-fluid">
-                <footer class="text-center" id="footer">
-                  <div class="footer-above">
-                    <div class="container-fluid">
-                      <div class="row-fluid">
-                        <div class="footer-col col-xs-6 col-sm-6 col-md-6">
-                          <h3>Location</h3>
-                          <p>San Fransisco, California</p>
-                        </div>
-                        <div class="footer-col col-xs-6 col-sm-6 col-md-6">
-                          <h3>Keep In Touch!</h3>
-                          <ul class="list-inline">
-                            <li><a class="btn-social btn-outline" href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a></li>
-                            <li><a class="btn-social btn-outline" href="mailto:mdeggies@gmail.com?" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
-                            <li><a class="btn-social btn-outline" href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a></li>
-                            <li><a class="btn-social btn-outline" href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="footer-below">
-                    <div class="container-fluid">
-                      <div class="row-fluid">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                          © 2016 Michele Degges
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </footer>
               </div>
             </div>
+          </div>
+          <!-----CONTACT
+          <div class="container-fluid" id="contact">
+          <div class="contact row-fluid page spacing">
+          <div class="col-xs-9 col-sm-9 col-md-9 form form-box">
+          <div class="form-top">
+          <div class="form-top-left">
+          <h1>Contact me</h1>
+          <p>Fill in the form below to get in touch</p>
+          <hr>
+        </div>
+      </div>
+      <div class="form-bottom contact-form">
+      <form role="form" action="assets/contact.php" method="post">
+      <div class="form-group">
+      <label class="sr-only" for="contact-email">Email</label>
+      <input type="email" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+    </div>
+    <div class="form-group">
+    <label class="sr-only" for="contact-subject">Subject</label>
+    <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+  </div>
+  <div class="form-group">
+  <label class="sr-only" for="contact-message">Message</label>
+  <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+</div>
+<button type="submit" class="btn">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>---->
+<div class="container-fluid" id="footer">
+  <footer class="text-center">
+    <div class="footer-above">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="footer-col col-xs-6 col-sm-6 col-md-6">
+            <h3>Location</h3>
+            <p>San Fransisco, California</p>
+          </div>
+          <div class="footer-col col-xs-6 col-sm-6 col-md-6">
+            <h3>Keep In Touch!</h3>
+            <ul class="list-inline">
+              <li><a class="btn-social btn-outline" href="https://github.iu.edu/mdegges"><i class="fa fa-github-square"></i></a></li>
+              <li><a class="btn-social btn-outline" href="mailto:mdeggies@gmail.com?" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a></li>
+              <li><a class="btn-social btn-outline" href="https://www.linkedin.com/in/mdegges"><i class="fa fa-linkedin-square"></i></a></li>
+              <li><a class="btn-social btn-outline" href="https://twitter.com/mdeggies"><i class="fa fa-twitter-square"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-below">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            © 2016 Michele Degges
           </div>
         </div>
       </div>
