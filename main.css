@@ -27,11 +27,6 @@ body {
   background-color: #FC239D;
 }
 
-/*change navbar hover color*/
-.nav.navbar-nav li a:hover {
-  color: red;
-}
-
 .navbar .navbar-collapse {
   text-align: center;
   border: 0px;
