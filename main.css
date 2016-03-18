@@ -414,3 +414,16 @@ text-decoration: bold;
 .card, .card .card-image img {
   width: 280px;
 }
+
+h1 {
+  font-size: 3.2rem !important;
+}
+
+h4 {
+  font-size: 2rem !important;
+}
+
+.links > a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
