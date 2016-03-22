@@ -19,6 +19,10 @@ body {
   vertical-align: top;
 }
 
+nav, .nav {
+  box-shadow: none !important;
+}
+
 .navbar .navbar-nav li a, .navbar-brand.brand {
   padding-bottom: 20px;
 }

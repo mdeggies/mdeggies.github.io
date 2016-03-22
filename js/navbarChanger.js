@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   $(document).scroll(function() {
     scroll_start = $(this).scrollTop();
-    if (scroll_start > 515) {
+    if (scroll_start > 200) {
       $navbar.css('background-color', 'rgba(255,255,255,1)');
       $navText.css('color', 'rgba(0,0,0,1)');
     }
